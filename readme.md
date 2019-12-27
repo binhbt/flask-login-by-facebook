@@ -10,7 +10,7 @@ Very simple example of using docker compose with a python flask web application.
 
 View
 
-```http://localhost:5555```
+```http://localhost:9999/fb_test```
 
 #### Stop
 
