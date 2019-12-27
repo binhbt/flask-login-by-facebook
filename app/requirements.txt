@@ -1,0 +1,5 @@
+flask
+pytest
+pytest-cov
+codecov
+facebook-sdk==3.1.0

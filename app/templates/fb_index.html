@@ -1,0 +1,20 @@
+{% extends "fb_base.html" %}
+{% block content %}
+<div class="center">
+    <p class='circle-image'
+       style="background-image: url(https://graph.facebook.com/{{ user['id'] }}/picture?type=large);
+              margin-left: auto; margin-right: auto;">
+    </p>
+    <h3>Hello, {{ user['name'] }}.</h3>
+                <a class="btn btn-lg btn-success btn-sm"
+               href="{{ url_for('fb_blueprint.post_message') }}"><span
+                    class="fa fa-check" aria-hidden="true"></span>
+    <a href="/fb_test/logout" id="logout">Log out</a>
+    <script>
+        document.getElementById('logout').onclick = function() {
+            FB.logout(function(response) { });
+        };
+    </script>
+
+</div>
+{% endblock %}
